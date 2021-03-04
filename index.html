@@ -34,7 +34,19 @@
     </script> -->
 
     <script>
+      var min = 1;
+      var max = 6 - min + 1;
+      var pc = Math.floor(Math.random()* max) + min;
+      var you = Math.floor(Math.random()*max) + min;
+      console.log('pc', pc, 'you', you);
 
+      if (pc < you) {
+        console.log(' You win, congratulation!')
+      } else if (pc>you) {
+        console.log(' You lose, sorry!')
+      } else {
+        console.log(" It's a draw!")
+      }
     </script>
   </body>
 </html>
